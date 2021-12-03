@@ -28,15 +28,6 @@
 
 		}
 
-		/* .curd-div {
-			background-image: url("card-backround.gif");
-
-		} */
-
-		/* .bg-color {
-			background-color: darkkhaki;
-		} */
-
 		.nav2-bg { 
 			background-color: darkmagenta;
 		} 
@@ -97,7 +88,8 @@
 					<ul class="nav justify-content-between ">
 						<div>
 							<li class="nav-item">
-								<a class="nav-link active" href="../View/Login.php"><i class="fas fa-cloud-sun fs-1"></i></a>
+								<!-- <a class="nav-link active" href="#"><i class="fas fa-cloud-sun fs-1"></i></a> -->
+								<img style="height: 80px; width: 150px;" src="logo.jpeg">
 							</li>
 						</div>
 						<div class="d-flex mt-2">
@@ -123,7 +115,7 @@
 						<div class="collapse navbar-collapse" id="navbarNav">
 							<ul class="navbar-nav ">
 								<li class="nav-item">
-									<a class="nav2 nav-link active text-white" aria-current="page" href="../View/MainPage.html">Home</a>
+									<a class="nav2 nav-link active text-white" aria-current="page" href="#">Home</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav2 nav-link active text-white" href="../View/gallary.html">Gallary</a>
@@ -156,6 +148,22 @@
 								<li class="nav-item">
 									<a class="nav2 nav-link active text-white">Emergency</a>
 								</li>
+								
+								<div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+									<ul class="navbar-nav">
+										<li class="nav-item dropdown">
+											<a class="nav2 nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+												<span class="text-white">Municipality</span>
+											</a>
+											<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+												<li><a class="dropdown-item" href="../View/view.html">View</a></li>
+												<li><a class="dropdown-item" href="../View/Organogram.html">Organogram</a></li>
+												<li><a class="dropdown-item" href="../View/councilor.html">Councilor</a></li>
+												
+											</ul>
+										</li>
+									</ul>
+								</div>
 								<li class="nav-item">
 									<a class="nav2 nav-link active text-white">Others</a>
 								</li>
@@ -170,10 +178,10 @@
 		<marquee class='marquee' direction="left" height="30px" scrollamount="2">
 			<ul class='d-flex text-info'>
 				<h5>| Notice regarding registration for COVID-19 Vaccine |</h5>&nbsp;&nbsp;&nbsp;&nbsp;
-				<h5>| Notice Results of MBA Program Winter 2021 |</h5>&nbsp;&nbsp;&nbsp;&nbsp;
-				<h5>| Notice Results of MBA Program including Internship |</h5>&nbsp;&nbsp;&nbsp;&nbsp;
-				<h5>| Notice Results of MBA Program including Internship |</h5>&nbsp;&nbsp;&nbsp;&nbsp;
-				<h5>| Notice of Publication of Final Result Winter 2021 |</h5>&nbsp;&nbsp;&nbsp;&nbsp;
+				<h5>| Notice regarding immunization of childern (0-5years) |</h5>&nbsp;&nbsp;&nbsp;&nbsp;
+				<h5>| Notice regarding issuness of voter ID card |</h5>&nbsp;&nbsp;&nbsp;&nbsp;
+				<h5>| If you have any problem then create an account and submit your problem|</h5>&nbsp;&nbsp;&nbsp;&nbsp;
+				
 			</ul>
 		</marquee>
 	</header>
@@ -227,10 +235,10 @@
 				<div class="row">
 					<div class="col-lg-4 col-12">
 						<div class="card card-style" style="width:400px; border-radius: 25px; background-color: #D3A478; color:white">
-							<img class="card-img-top card-img" src="man.png" alt="Card image">
+							<img class="card-img-top card-img" src="oldmayor.webp" alt="Card image">
 							<div class="card-body">
-								<h4 class="card-title">John Doe</h4>
-								<p class="card-text">Despair are had soon talethis oer if feud who. Childe his plain sick olden stalked plain and but the, be fathers carnal him given sick nor companie. Which delight climes flee can it where. To muse would soils longed, such ne that old the superstition deem a him in, if.</p>
+								<h5 class="card-title">Amzad Hossain Sarker(former mayor)</h5>
+								<p class="card-text">dies from coronavirus infections at a hospital in the capital on Thursday morning.Amjad Hossain was suffering from diabetes and lung diseases for long.Sarker was elected MP from Nilphamari-4 constituency as a Bangladesh Nationalist Party candidate in 2001.</p> 
 								<a href="#" class="btn ">See Profile</a>
 							</div>
 						</div>
@@ -238,84 +246,96 @@
 					</div>
 					<div class="col-lg-4 col-12">
 						<div class="card card-style" style="width:400px; border-radius: 25px; background-color: #D3A478;color:white">
-							<img class="card-img-top card-img" src="man.png" alt="Card image">
+							<img class="card-img-top card-img" src="sir.jpg" alt="Card image">
 							<div class="card-body">
-								<h4 class="card-title">John Doe</h4>
-								<p class="card-text">Despair are had soon talethis oer if feud who. Childe his plain sick olden stalked plain and but the, be fathers carnal him given sick nor companie. Which delight climes flee can it where. To muse would soils longed, such ne that old the superstition deem a him in, if.</p>
-								<a href="#" class="btn ">See Profile</a>
+								<h4 class="card-title">Brig Gen Professor Dr. Md Lutfor Rahman </h4>
+								<p class="card-text">The mission of BAUST is to develop human resources in the different fields of education to meet the ever changing needs of the society. This University aims at producing quality graduates at affordable costs imbued with the spirit of ethical values and equipped with intellectual knowledge.</p>
+								<a href="//www.baust.edu.bd/pages/content_detail/message-from-vc-21883" class="btn ">See Profile</a>
 							</div>
 						</div>
 
 					</div>
 					<div class="col-lg-4 col-12">
 						<div class="card card-style" style="width:400px; border-radius: 25px;background-color: #D3A478;color:white">
-							<img class="card-img-top card-img" src="man.png" alt="Card image">
+							<img class="card-img-top card-img" src="freedom.jpg" alt="Card image">
 							<div class="card-body">
-								<h4 class="card-title">John Doe</h4>
-								<p class="card-text">Despair are had soon talethis oer if feud who. Childe his plain sick olden stalked plain and but the, be fathers carnal him given sick nor companie. Which delight climes flee can it where. To muse would soils longed, such ne that old the superstition deem a him in, if.</p>
-								<a href="#" class="btn ">See Profile</a>
+								<h4 class="card-title">Ijhar Road</h4>
+								<p class="card-text">General Secretary of the Communist Party Saidpur upazila unit Delowar Hossain told The Independent that about 4,000 people under Saidpur upazila had sacrificed their lives during the great Liberation War. The name of the road that was named after the first martyred freedom fighter, Mahtab Beg, in this town, is now  being called the Ijhar Road, a notorious Razakar who killed him (Mahtab Beg ).</p>
+								<a href="//m.theindependentbd.com/printversion/details/145726" class="btn ">See Profile</a>
 							</div>
 						</div>
 
 					</div>
 
 				</div>
-				<div class="row mt-5">
-					<div class="col-lg-4 col-12">
-						<div class="card card-style" style="width:400px; border-radius: 25px;background-color: #D3A478;color:white">
-							<img class="card-img-top card-img" src="man.png" alt="Card image">
-							<div class="card-body">
-								<h4 class="card-title">John Doe</h4>
-								<p class="card-text">Despair are had soon talethis oer if feud who. Childe his plain sick olden stalked plain and but the, be fathers carnal him given sick nor companie. Which delight climes flee can it where. To muse would soils longed, such ne that old the superstition deem a him in, if.</p>
-								<a href="#" class="btn ">See Profile</a>
-							</div>
-						</div>
-
-					</div>
-					<div class="col-lg-4 col-12">
-						<div class="card card-style" style="width:400px; border-radius: 25px;background-color: #D3A478;color:white">
-							<img class="card-img-top card-img" src="man.png" alt="Card image">
-							<div class="card-body">
-								<h4 class="card-title">John Doe</h4>
-								<p class="card-text">Despair are had soon talethis oer if feud who. Childe his plain sick olden stalked plain and but the, be fathers carnal him given sick nor companie. Which delight climes flee can it where. To muse would soils longed, such ne that old the superstition deem a him in, if.</p>
-								<a href="#" class="btn ">See Profile</a>
-							</div>
-						</div>
-
-					</div>
-					<div class="col-lg-4 col-12">
-						<div class="card card-style" style="width:400px; border-radius: 25px;background-color: #D3A478;color:white">
-							<img class="card-img-top card-img" src="man.png" alt="Card image">
-							<div class="card-body">
-								<h4 class="card-title">John Doe</h4>
-								<p class="card-text">Despair are had soon talethis oer if feud who. Childe his plain sick olden stalked plain and but the, be fathers carnal him given sick nor companie. Which delight climes flee can it where. To muse would soils longed, such ne that old the superstition deem a him in, if.</p>
-								<a href="#" class="btn ">See Profile</a>
-							</div>
-						</div>
-
-					</div>
-					
-
-				</div>
+				
 
 
 			</section>
 		</div>
+
+
+
+		<section class="container pt-5">
+
+		<h1><u>Photos:</u></h1>
+			<div class="row">
+				<div class="col-lg-4">
+					<img class="img-fluid" src="g14.jpeg">
+				</div>
+				<div class="col-lg-4">
+				    <img class="img-fluid" src="g15.jpeg">
+				</div>
+				<div class="col-lg-4">
+				    <img class="img-fluid" src="g16.jpeg">
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<img class="img-fluid" src="g17.jpeg">
+				</div>
+				<div class="col-lg-4">
+				    <img class="img-fluid" src="g18.jpeg">
+				</div>
+				<div class="col-lg-4">
+				    <img class="img-fluid" src="g19.jpeg">
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<img src="">
+				</div>
+				<div class="col-lg-6">
+				    <img src="">
+				</div>
+				<div class="col-lg-6">
+				    <img src="">
+				</div>
+
+			</div>
+
+			<div class="text-center">
+				<button class="bg-danger text-white p-2 fs-3"><a class="text-white" style="text-decoration: none;" href="gallary.html">See More Photos</a></button>
+			</div>
+		</section>
 	</main>
 
 	<footer>
-		<div class="footer-part mt-5 bg-color">
+		<div style="background-color: hotpink;" class="footer-part mt-5">
 			<div class="container">
 				<div class="row d-flex align-items-center">
 					<div class="col-lg-6">
-						<h2>Contact Us</h2>
+						<h2>Emergency Contact</h2>
 
 						<div class="footer-contuct">
-							<p> <a class="contact" href="mailto:mdshoyan30@gmail.com"><i class="fas fa-envelope-open-text"></i> Email:mdshoyan30@gmail.com</a></p>
+							
 
-							<p> <a class="contact text-white" href="tel:+8801762822330"><i class="fas fa-phone-volume"></i>Phn: +8801762822330 </a></p>
-							<p> <a class="contact text-white" href="fax: 05526-73300"><i class="fas fa-fax"></i> Fax: 05526-73300</a></p>
-							<p> <a class="contact text-white" href="#"><i class="fas fa-address-card"></i> Address: saidpur Cantonment Nilphamari</a></p>
+							<p> <a class="contact text-white" href="tel:+8801762822330">Fire service: +8805526-72222 </a></p>
+							<p> <a class="contact text-white" href="fax: 05526-73300">Police: 05526-72025</a></p>
+							<p> <a class="contact text-white" href="#"><i class="fas fa-address-card"></i> Address: Station Road, Saidpur</a></p>
+							<p> <a class="contact text-white" href="#">Emergency Service: 999</a></p>
 
 						</div>
 					</div>

@@ -9,6 +9,14 @@
 <html>
 <head>
    <style>
+      body {
+
+/* background-image: url("form_bg2.jpg");
+background-repeat: no-repeat; */
+background-color: #EBDEF0;
+background-image: url("road-form-bg.jfif");
+
+}
 input[type=text] {
   width: 30%;
   padding: 5px 20px;
@@ -29,27 +37,67 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
+input[type=reset]{
+         width: 20%;
+         background-color:#A9DFBF;
+         color: black;
+         padding: 14px 20px;
+         margin: 8px 0;
+         border: none;
+         border-radius: 4px;
+         font-size: medium;
+         cursor: pointer;
+      }
 
 input[type=submit]:hover {
   background-color: lightgreen;
 }
 
-div{
-  background-color: lightyellow;
-  
-  width: 600px;
-  padding-left: 3px;
-  border: 20px solid green;
-  margin: 03px;
+.div2 {
+         /* background-color:#D6EAF8; */
+         
+         padding: 25px;
+         width: 600px;
+         height: 400px;
+         color: white;
+         font-weight: bolder;
+         font-size: 25px;
+         margin-top: 100px;
+         margin-left: 250px;
 
-}
+      }
+
+      .div2:hover {
+         box-shadow: 5px 10px 8px 10px #888888;
+      }
+
+      .div1 {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+
+      }
+      .back-btn{
+         width: 20%;
+         background-color:#F9E79F;
+         color: black;
+         padding: 14px 20px;
+         margin: 8px 0;
+         border: none;
+         border-radius: 4px;
+         font-size: medium;
+         cursor: pointer;
+         text-decoration: none;
+      }
 </style>
-   <title>Road</title>
+   <title>Streetlight</title>
 </head>
 <body>
    <form action="" method="post" enctype="multipart/form-data">
-   <div>
-   <left> <b><h2 style="color:red;">Street Light</h2></b></left>
+   <div class="div1">
+      <div class="div2">
+      <left> <b><h2 style="color:red; text-decoration:underline">Street Light:</h2></b></left>
          <table>
              <b>Issue Type:</b>
               <br>
@@ -73,14 +121,17 @@ div{
           Image 
       <input type="file" name="image"  width="50" height="30"><br><br>
 
-            <input type="submit" name="add" value="ADDISSUE">
+            <input type="submit" name="add" value="ADD ISSUE">
                      <input type="reset" name="reset" value="RESET">
                   </h3>
                </td>
-               <td>&emsp;<a href="RaiseIssue.php">Back to previous page</a></td>
+               <td>&emsp;<a class="back-btn" href="ResidentHome.php">Back to previous page</a></td>
             </tr>
          </table>
+      </div>
+   
+   </div>
    </form>
-</div>
+
 </body>
 </html>
