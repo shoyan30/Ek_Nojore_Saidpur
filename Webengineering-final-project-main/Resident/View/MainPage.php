@@ -75,7 +75,7 @@
 		.btn{
 			background-color: yellowgreen;
 		}
-		
+	
 	</style>
 
 </head>
@@ -114,7 +114,7 @@
 
 						<div class="collapse navbar-collapse" id="navbarNav">
 							<ul class="navbar-nav ">
-								<li class="nav-item">
+								<li class="nav-item ">
 									<a class="nav2 nav-link active text-white" aria-current="page" href="#">Home</a>
 								</li>
 								<li class="nav-item">
@@ -167,6 +167,7 @@
 								<li class="nav-item">
 									<a class="nav2 nav-link active text-white">Others</a>
 								</li>
+								
 							</ul>
 						</div>
 					</div>
