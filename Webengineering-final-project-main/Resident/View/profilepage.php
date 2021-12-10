@@ -56,28 +56,28 @@ if ($userQuery->num_rows > 0) {
       { $radio2="checked"; }
       else{$radio3="checked";}
 
-      if($row["area"]=="Uttara")
+      if($row["area"]=="saidpur market")
       {
         $area1="selected";
       }
-      if($row["area"]=="Bashundhara")
+      if($row["area"]=="university area")
       {
         $area2="selected";
       }
-      if($row["area"]=="Mirpur")
+      if($row["area"]=="cantbazar")
       {
         $area3="selected";
       }
-      if($row["area"]=="Hatirjheel")
+      if($row["area"]=="newbabupara")
       {
         $area4="selected";
       }
 
-      if($row["area"]=="Badda")
+      if($row["area"]=="chohomoni")
       {
         $area5="selected";
       }
-      if($row["area"]=="Mohakhali")
+      if($row["area"]=="terminal")
       {
         $area6="selected";
       }
@@ -98,6 +98,11 @@ if ($userQuery->num_rows > 0) {
 ?>
 <head>
    <style>
+      body{
+         /* background-image: url("form_bg2.jpg");
+         background-repeat: no-repeat; */
+         background-color: peachpuff;
+      }
 input[type=text] {
   width: 30%;
   padding: 5px 20px;
@@ -123,18 +128,36 @@ input[type=submit]:hover {
   background-color: lightgreen;
 }
 
-div{
-  background-color: lightyellow;
-  
-  width: 600px;
-  padding-left: 3px;
-  border: 20px solid green;
-  margin: 03px;
 
-}
+
+
+.div2 {
+         
+         background-color: pink;
+         /* border: 1px solid; */
+         
+         width: 600px;
+         height: 600px;
+         padding-left: 5px;
+         margin-top: 40px;
+
+         /* margin: auto; */
+
+      }
+      .div2:hover{
+         box-shadow: 5px 10px 8px 10px #888888;
+      }
+      .div1{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         
+         
+      }
 </style>
 <form action='' method='post'>
-<div>
+<div class="div1">
+<div class="div2">
 
 <input type='hidden' name='username' value="<?php echo $username; ?>" >
 Password : <input type='text' name='password' value="<?php echo $password; ?>" ><br><br>
@@ -150,12 +173,12 @@ Area:
 <select name="area" >
 <option > </option>
 <optgroup label="area">
-	  <option value="uttara" <?php echo $area1; ?>>Uttara</option>
-    <option value="bashundhara"<?php echo $area2; ?>>Bashundhara</option>
-    <option value="mirpur" <?php echo $area3; ?>>Mirpur</option>
-    <option value="hatirjheel" <?php echo $area4; ?>>Hatirjheel</option>   
-    <option value="badda" <?php echo $area5; ?>>Badda</option>  
-    <option value="mohakhali" <?php echo $area6; ?>>Mohakhali</option>  
+	  <option value="saidpur market" <?php echo $area1; ?>>saidpur market</option>
+    <option value="university area"<?php echo $area2; ?>>university area</option>
+    <option value="cantbazar" <?php echo $area3; ?>>cantbazar</option>
+    <option value="newbabupara" <?php echo $area4; ?>>newbabupara</option>   
+    <option value="chohomoni" <?php echo $area5; ?>>chohomoni</option>  
+    <option value="terminal" <?php echo $area6; ?>>terminal</option>  
     </select><br><br>
 
 Nid No:</td>
@@ -172,6 +195,7 @@ Nid No:</td>
 <a href="../View/login.php">Back </a>
 
 <a href="../Control/logout.php"> logout</a>
+</div>
 </div>
 </body>
 </html>

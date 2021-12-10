@@ -4,7 +4,11 @@
 <head>
 
 	<title>Ak Nojore Saidpur</title>
-	
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -20,17 +24,18 @@
 			margin: 0px;
 			padding: 0px;
 		}
-
 		.nav2:hover {
-			background-color: darksalmon;
+			/* background-color: darksalmon;
 			border-radius: 10px;
-			cursor: pointer;
+			cursor: pointer; */
+			border-top: 4px solid red;
+			
 
 		}
 
-		.nav2-bg { 
+		.nav2-bg {
 			background-color: darkmagenta;
-		} 
+		}
 
 		.card-bg {
 			background-color: darkmagenta;
@@ -39,15 +44,6 @@
 		.btn-bg {
 			background-color: darkmagenta;
 		}
-
-		/* .font-image {
-			background-image: url("dhaka-city.jpg");
-			background-repeat: no-repeat;
-			height: 800px;
-			width: 100%;
-
-			opacity: 70%;
-		} */
 		.centered {
 			font-size: 50px;
 			position: absolute;
@@ -72,33 +68,37 @@
 			/* box-shadow: 10px 10px 10px 10px rgba(22, 22, 26, 0.18); */
 
 		}
-		.btn{
+
+		.btn {
 			background-color: yellowgreen;
 		}
-	
+		
+		
+		
 	</style>
 
 </head>
 
-<body class="">
-	<header>
+<body>
+	<header class="fixed-top">
 		<div class="bg-light p-2">
 			<section class="container">
 				<nav>
 					<ul class="nav justify-content-between ">
 						<div>
 							<li class="nav-item">
-								<!-- <a class="nav-link active" href="#"><i class="fas fa-cloud-sun fs-1"></i></a> -->
+								
 								<img style="height: 80px; width: 150px;" src="logo.jpeg">
 							</li>
 						</div>
 						<div class="d-flex mt-2">
 							<li class="nav-item me-5">
-								<button class="btn-bg fs-6 rounded"><a class="nav-link active text-white" href="../View/Login.php"> Sign in</a></button>
+								<button class="btn-bg fs-6 rounded"><a class="nav-link active text-white" href="../admin/Login.php"> Sign in</a></button>
 							</li>
-							<li class="nav-item">
+							<li class="nav-item ">
 								<button class=" btn-bg fs-6 rounded"><a class="nav-link active text-white" href="../View/RegistrationForm.php"> Sign Up</a></button>
 							</li>
+							
 						</div>
 					</ul>
 				</nav>
@@ -106,83 +106,60 @@
 		</div>
 
 
-		<div class="mt-3 nav2-bg">
-			<section class="container ">
-				<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container-fluid">
+		<div class=" nav2-bg">
+			<nav class="navbar container navbar-expand-lg navbar-light ">
+				<div class="container-fluid">
+
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+							<li class="nav-item nav2">
+								<a class="nav-link active text-white fs-5" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item nav2 ms-4">
+								<a class="nav-link active text-white fs-5" href="gallary.html">Gallary</a>
+							</li>
+							<li class="nav-item nav2 ms-4">
+								<a class="nav-link active text-white fs-5" href="restaurant.html">Restaurent</a>
+							</li>
+							<li class="nav-item nav2 ms-4">
+								<a class="nav-link active text-white fs-5" href="education.html">Education</a>
+							</li>
+							<li class="nav-item nav2 ms-4">
+								<a class="nav-link active text-white fs-5" href="stay.html">Stay</a>
+							</li>
+							<li class="nav-item nav2 ms-4">
+								<a class="nav-link active text-white fs-5" href="transportation.html">Transportation</a>
+							</li>
+							<li class="nav-item dropdown nav2 ms-4">
+								<a class="nav-link text-white fs-5 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Municipality
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" href="view.html">View</a></li>
+									<li><a class="dropdown-item" href="councilor.html">Councilor</a></li>			
+									<li><a class="dropdown-item" href="Organogram.html">Organogram</a></li>
+								</ul>
+							</li>
 
 
-						<div class="collapse navbar-collapse" id="navbarNav">
-							<ul class="navbar-nav ">
-								<li class="nav-item ">
-									<a class="nav2 nav-link active text-white" aria-current="page" href="#">Home</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav2 nav-link active text-white" href="../View/gallary.html">Gallary</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav2 nav-link active text-white" href="../View/restaurant.html">Restaurant</a>
-								</li>
-								<div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-									<ul class="navbar-nav">
-										<li class="nav-item dropdown">
-											<a class="nav2 nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-												<span class="text-white">Education</span>
-											</a>
-											<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-												<li><a class="dropdown-item" href="#">School</a></li>
-												<li><a class="dropdown-item" href="#">College</a></li>
-												<li><a class="dropdown-item" href="#">University</a></li>
-												<li><a class="dropdown-item" href="#">Madrasha</a></li>
-												<li><a class="dropdown-item" href="#">Technical</a></li>
-											</ul>
-										</li>
-									</ul>
-								</div>
-								<li class="nav-item">
-									<a class="nav2 nav-link active text-white">Stay</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav2 nav-link active text-white">Transportation</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav2 nav-link active text-white">Emergency</a>
-								</li>
-								
-								<div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-									<ul class="navbar-nav">
-										<li class="nav-item dropdown">
-											<a class="nav2 nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-												<span class="text-white">Municipality</span>
-											</a>
-											<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-												<li><a class="dropdown-item" href="../View/view.html">View</a></li>
-												<li><a class="dropdown-item" href="../View/Organogram.html">Organogram</a></li>
-												<li><a class="dropdown-item" href="../View/councilor.html">Councilor</a></li>
-												
-											</ul>
-										</li>
-									</ul>
-								</div>
-								<li class="nav-item">
-									<a class="nav2 nav-link active text-white">Others</a>
-								</li>
-								
-							</ul>
-						</div>
+						</ul>
 					</div>
-				</nav>
-			</section>
+				</div>
+			</nav>
 		</div>
 
 
 		<marquee class='marquee' direction="left" height="30px" scrollamount="2">
-			<ul class='d-flex text-info'>
+			<ul class='d-flex text-danger'>
 				<h5>| Notice regarding registration for COVID-19 Vaccine |</h5>&nbsp;&nbsp;&nbsp;&nbsp;
 				<h5>| Notice regarding immunization of childern (0-5years) |</h5>&nbsp;&nbsp;&nbsp;&nbsp;
 				<h5>| Notice regarding issuness of voter ID card |</h5>&nbsp;&nbsp;&nbsp;&nbsp;
 				<h5>| If you have any problem then create an account and submit your problem|</h5>&nbsp;&nbsp;&nbsp;&nbsp;
-				
+
 			</ul>
 		</marquee>
 	</header>
@@ -199,19 +176,19 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img style=" opacity:60%; height:800px" src="caru-1.jpg" class="d-block w-100" alt="...">
+						<img style=" opacity:60%; height:600px" src="caru-1.jpg" class="d-block w-100" alt="...">
 					</div>
 					<div class="centered">
 						Welcome To Jadur Shohor <span style=" margin-left:250px">Saidpur</span>
 					</div>
 					<div class="carousel-item">
-						<img style=" opacity:60%; height:800px" src="caru-2.jpg" class="d-block w-100" alt="...">
+						<img style=" opacity:60%; height:600px" src="caru-2.jpg" class="d-block w-100" alt="...">
 					</div>
 					<div class="centered">
 						Welcome To Jadur Shohor <span style=" margin-left:250px">Saidpur</span>
 					</div>
 					<div class="carousel-item">
-						<img style=" opacity:60%; height:800px" src="caru-3.jpg" class="d-block w-100" alt="...">
+						<img style=" opacity:60%; height:600px" src="caru-3.jpg" class="d-block w-100" alt="...">
 					</div>
 					<div class="centered">
 						Welcome To Jadur Shohor <span style=" margin-left:250px">Saidpur</span>
@@ -239,7 +216,7 @@
 							<img class="card-img-top card-img" src="oldmayor.webp" alt="Card image">
 							<div class="card-body">
 								<h5 class="card-title">Amzad Hossain Sarker(former mayor)</h5>
-								<p class="card-text">dies from coronavirus infections at a hospital in the capital on Thursday morning.Amjad Hossain was suffering from diabetes and lung diseases for long.Sarker was elected MP from Nilphamari-4 constituency as a Bangladesh Nationalist Party candidate in 2001.</p> 
+								<p class="card-text">dies from coronavirus infections at a hospital in the capital on Thursday morning.Amjad Hossain was suffering from diabetes and lung diseases for long.Sarker was elected MP from Nilphamari-4 constituency as a Bangladesh Nationalist Party candidate in 2001.</p>
 								<a href="#" class="btn ">See Profile</a>
 							</div>
 						</div>
@@ -261,7 +238,7 @@
 							<img class="card-img-top card-img" src="freedom.jpg" alt="Card image">
 							<div class="card-body">
 								<h4 class="card-title">Ijhar Road</h4>
-								<p class="card-text">General Secretary of the Communist Party Saidpur upazila unit Delowar Hossain told The Independent that about 4,000 people under Saidpur upazila had sacrificed their lives during the great Liberation War. The name of the road that was named after the first martyred freedom fighter, Mahtab Beg, in this town, is now  being called the Ijhar Road, a notorious Razakar who killed him (Mahtab Beg ).</p>
+								<p class="card-text">General Secretary of the Communist Party Saidpur upazila unit Delowar Hossain told The Independent that about 4,000 people under Saidpur upazila had sacrificed their lives during the great Liberation War. The name of the road that was named after the first martyred freedom fighter, Mahtab Beg, in this town, is now being called the Ijhar Road, a notorious Razakar who killed him (Mahtab Beg ).</p>
 								<a href="//m.theindependentbd.com/printversion/details/145726" class="btn ">See Profile</a>
 							</div>
 						</div>
@@ -269,7 +246,7 @@
 					</div>
 
 				</div>
-				
+
 
 
 			</section>
@@ -279,16 +256,16 @@
 
 		<section class="container pt-5">
 
-		<h1><u>Photos:</u></h1>
-			<div class="row">
+			<h1 style="color: royalblue;"><u>Photos:</u></h1>
+			<div class="row mt-5">
 				<div class="col-lg-4">
 					<img class="img-fluid" src="g14.jpeg">
 				</div>
 				<div class="col-lg-4">
-				    <img class="img-fluid" src="g15.jpeg">
+					<img class="img-fluid" src="g15.jpeg">
 				</div>
 				<div class="col-lg-4">
-				    <img class="img-fluid" src="g16.jpeg">
+					<img class="img-fluid" src="g16.jpeg">
 				</div>
 
 			</div>
@@ -297,10 +274,10 @@
 					<img class="img-fluid" src="g17.jpeg">
 				</div>
 				<div class="col-lg-4">
-				    <img class="img-fluid" src="g18.jpeg">
+					<img class="img-fluid" src="g18.jpeg">
 				</div>
 				<div class="col-lg-4">
-				    <img class="img-fluid" src="g19.jpeg">
+					<img class="img-fluid" src="g19.jpeg">
 				</div>
 
 			</div>
@@ -309,16 +286,16 @@
 					<img src="">
 				</div>
 				<div class="col-lg-6">
-				    <img src="">
+					<img src="">
 				</div>
 				<div class="col-lg-6">
-				    <img src="">
+					<img src="">
 				</div>
 
 			</div>
 
 			<div class="text-center">
-				<button class="bg-danger text-white p-2 fs-3"><a class="text-white" style="text-decoration: none;" href="gallary.html">See More Photos</a></button>
+				<button style=" border-radius:25px; border-style:none" class="bg-danger text-white p-2 fs-3"><a class="text-white" style="text-decoration: none;" href="gallary.html">See More Photos</a></button>
 			</div>
 		</section>
 	</main>
@@ -331,7 +308,7 @@
 						<h2>Emergency Contact</h2>
 
 						<div class="footer-contuct">
-							
+
 
 							<p> <a class="contact text-white" href="tel:+8801762822330">Fire service: +8805526-72222 </a></p>
 							<p> <a class="contact text-white" href="fax: 05526-73300">Police: 05526-72025</a></p>
@@ -341,7 +318,7 @@
 						</div>
 					</div>
 					<div class="col-lg-6 p-5">
-						<iframe width="100%" height="300" frameborder="0" allowfullscreen="" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20333.37969201895!2d88.91986364135533!3d25.72204365605453!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x15261313ab3f22f4!2sBangladesh+Army+University+of+Science+%26+Technology+(BAUST)!5e0!3m2!1sen!2sus!4v1475474713372"></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242218.5935423306!2d88.95596321992329!3d25.772467636481494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e35049a0597e5d%3A0xdcf3bc5b3efc2369!2sSaidpur%20Upazila!5e0!3m2!1sen!2sbd!4v1638730759875!5m2!1sen!2sbd" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 					</div>
 				</div>
 
