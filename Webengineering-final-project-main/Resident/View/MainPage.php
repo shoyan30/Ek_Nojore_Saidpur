@@ -88,7 +88,7 @@
 						<div>
 							<li class="nav-item">
 								
-								<img style="height: 80px; width: 150px;" src="logo.jpeg">
+								<img style="height: 80px; width: 150px; border-radius:50px" src="logo.jpeg">
 							</li>
 						</div>
 						<div class="d-flex mt-2">
@@ -269,7 +269,7 @@
 				</div>
 
 			</div>
-			<div class="row">
+			<div class="row mt-5">
 				<div class="col-lg-4">
 					<img class="img-fluid" src="g17.jpeg">
 				</div>
@@ -281,15 +281,15 @@
 				</div>
 
 			</div>
-			<div class="row">
-				<div class="col-lg-6">
-					<img src="">
+			<div class="row mt-5">
+				<div class="col-lg-4">
+					<img class="img-fluid" src="g1.jpeg">
 				</div>
-				<div class="col-lg-6">
-					<img src="">
+				<div class="col-lg-4">
+					<img class="img-fluid" src="g2.jpeg">
 				</div>
-				<div class="col-lg-6">
-					<img src="">
+				<div class="col-lg-4">
+					<img class="img-fluid" src="g3.jpeg">
 				</div>
 
 			</div>

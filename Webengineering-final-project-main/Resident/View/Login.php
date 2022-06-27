@@ -72,6 +72,7 @@
          margin-right: 40px;
          border-radius: 20px;
          border: none;
+
          
       }
       a{
@@ -114,8 +115,8 @@
             </table>
             <input style="font-size: 15px;" type="submit" name="submit" value="LOGIN"><br><br>
                   <div style="text-align: center;">
-                  <button class="btn"><a href="RegistrationForm.php"> Registration</a></button>
-                  <button class="btn"><a href="MainPage.php">Back to previous page</a></button></td>
+                  <button class="btn"><a style="font-size: 20px; color:white" href="RegistrationForm.php"> Registration</a></button>
+                  <button class="btn"><a style="font-size: 20px; color:white" href="MainPage.php">Back to previous page</a></button></td>
                   </div>
          </div>
       </div>

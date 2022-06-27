@@ -13,9 +13,6 @@ header("Location:../View/login.php"); // Redirecting To Home Page
 
 ?>
 
-
-
-
 <!DOCTYPE html>
 <html>
 <body>
@@ -27,13 +24,13 @@ header("Location:../View/login.php"); // Redirecting To Home Page
 <?php
 $User="";
 $username="";
-$radio1=$radio2=$radio3=$password=$address=$idno=$area1=$area2=$area3=$area4=$area5=$area6="";
+$radio1=$radio2=$radio3=$password=$address=$nidno=$area="";
 $phone=$email="";
 $connection = new db();
 $conobj=$connection->OpenCon();
 //
 
-//$searchQuery=$connection->searc
+//$searchQuery=$connection->search
 if(isset($_POST['Search']))
 {
   $User=$_REQUEST['username'];
@@ -49,38 +46,13 @@ if ($userQuery->num_rows > 0) {
       $nidno=$row["nidno"];
       $email=$row["email"];
       $phone=$row["phone"];
+      $area=$row["area"];
      
       if(  $row["gender"]=="female" )
       { $radio1="checked"; }
       else if($row["gender"]=="male")
       { $radio2="checked"; }
       else{$radio3="checked";}
-
-      if($row["area"]=="saidpur market")
-      {
-        $area1="selected";
-      }
-      if($row["area"]=="university area")
-      {
-        $area2="selected";
-      }
-      if($row["area"]=="cantbazar")
-      {
-        $area3="selected";
-      }
-      if($row["area"]=="newbabupara")
-      {
-        $area4="selected";
-      }
-
-      if($row["area"]=="chohomoni")
-      {
-        $area5="selected";
-      }
-      if($row["area"]=="terminal")
-      {
-        $area6="selected";
-      }
 
 
   } 
@@ -89,10 +61,6 @@ if ($userQuery->num_rows > 0) {
     echo "0 results";
   }
 }
-
-
-
-
 
 
 ?>
@@ -169,20 +137,10 @@ Address: <textarea rows="5" cols="30" name="address"> <?php echo $address; ?> </
      <input type='radio' name='gender' value='other'<?php  $radio3; ?> > Other <br><br>
 
 
-Area: 
-<select name="area" >
-<option > </option>
-<optgroup label="area">
-	  <option value="saidpur market" <?php echo $area1; ?>>saidpur market</option>
-    <option value="university area"<?php echo $area2; ?>>university area</option>
-    <option value="cantbazar" <?php echo $area3; ?>>cantbazar</option>
-    <option value="newbabupara" <?php echo $area4; ?>>newbabupara</option>   
-    <option value="chohomoni" <?php echo $area5; ?>>chohomoni</option>  
-    <option value="terminal" <?php echo $area6; ?>>terminal</option>  
-    </select><br><br>
+Area : <input type='text' name='area' value="<?php echo $area; ?>" ><br><br>
 
 Nid No:</td>
- <input type="number" name="nidno" value="<?php echo $nidno; ?>" ><br><br>
+ <input type="text" name="nidno" value="<?php echo $nidno; ?>" ><br><br>
  Phone</td>
  <input type="text" name="phone" value="<?php echo $phone; ?>" ><br><br>
 
